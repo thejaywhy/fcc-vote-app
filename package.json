@@ -19,7 +19,8 @@
     "boilerplate"
   ],
   "scripts": {
-    "start": "node server.js"
+    "start": "node server.js",
+    "test": "mocha --timeout 10000 --exit"
   },
   "author": "Blake Johnston",
   "license": "MIT",
