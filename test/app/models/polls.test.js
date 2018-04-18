@@ -1,4 +1,6 @@
 'use strict';
+/* jshint esversion: 6, expr: true */
+
 
 var sinon = require('sinon');
 var mongoose = require('mongoose');
@@ -10,6 +12,7 @@ var Poll = require(process.cwd() + '/app/models/polls.model').Poll;
 var Choice = require(process.cwd() + '/app/models/polls.model').Choice;
 
 describe('Polls', () => {
+
   it('should be invalid if displayName is empty', (done) => {
     var p = new Poll();
 
@@ -26,7 +29,7 @@ describe('Polls', () => {
     p.should.have.property('choices');
     p.choices.should.be.empty;
     done();
-  })
+  });
 
 });
 
@@ -37,13 +40,13 @@ describe('Choices', () => {
       err.should.exist;
       done();
     });
-  })
+  }),
 
   it('should have default value of 0', (done) => {
     var c = new Choice();
     c.should.have.property('votes');
-    c.votes.should.equal(0)
+    c.votes.should.equal(0);
     done();
-  })
+  });
 
 });

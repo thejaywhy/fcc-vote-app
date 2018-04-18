@@ -1,28 +1,17 @@
 {
-  "name": "clementinejs-fcc",
-  "version": "1.0.1",
-  "description": "The elegant and lightweight boilerplate for full stack JavaScript.",
+  "name": "jy-fcc-vote-app",
+  "version": "1.0.0",
+  "description": "A freecodecamp Voting app project",
   "main": "server.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/johnstonbl01/clementinejs-fcc"
+    "url": "git@github.com:thejaywhy/fcc-vote-app.git"
   },
-  "homepage": "http://www.clementinejs.com/",
-  "bugs": "https://github.com/johnstonbl01/clementinejs-fcc/issues",
-  "keywords": [
-    "MongoDB",
-    "Mongoose",
-    "full stack",
-    "Express",
-    "Node",
-    "javascript",
-    "boilerplate"
-  ],
   "scripts": {
     "start": "node server.js",
     "test": "mocha --timeout 10000 --exit"
   },
-  "author": "Blake Johnston",
+  "author": "thejaywhy",
   "license": "MIT",
   "dependencies": {
     "dotenv": "^1.2.0",
@@ -35,7 +24,19 @@
   "devDependencies": {
     "chai": "^4.1.2",
     "chai-http": "^3.0.0",
+    "jshint": "^2.9.5",
     "mocha": "^5.0.4",
-    "sinon": "^4.4.8"
+    "sinon": "^4.4.8",
+    "sinon-chai": "^3.0.0",
+    "sinon-express-mock": "^2.0.0"
+  },
+  "jshintConfig": {
+    "strict": "global",
+    "node": true,
+    "mocha": true,
+    "globals": {
+      "require": false,
+      "module": false
+    }
   }
 }

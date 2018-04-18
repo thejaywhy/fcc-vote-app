@@ -11,4 +11,9 @@ process.env.PORT = "3010";
 var mongoose = require('mongoose');
 mongoose.Promise = global.Promise;
 
-require('./app/models/polls.test.js')
+require('./app/models/polls.test.js');
+
+require('./app/controllers/pollHandler.server.test.js');
+
+console.log("**** RUNNING INTEGRATION TESTS ****");
+require('./integration/server.js');

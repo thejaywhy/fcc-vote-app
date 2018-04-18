@@ -1,6 +1,5 @@
 'use strict';
 
-
 var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
 
@@ -32,8 +31,7 @@ var PollSchema = Schema({
 var PollModel = mongoose.model('Poll', PollSchema);
 var PollChoice = mongoose.model('PollChoice', PollChoiceSchema);
 
-
 module.exports = {
   Poll: PollModel,
   Choice: PollChoice
-}
+};
